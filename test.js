@@ -1,16 +1,15 @@
-function sumValues(num1, num2, add) {
+function discountPrices(prices, discount) {
+    let discounted = [];
+    let finalPrice = 0;
+    for (let i = 0; i < prices.length; i++) {
+        let discountedPrice = prices[i] * (1 - discount);
+        finalPrice = Math.round(discountedPrice * 100) / 100; // Round to two decimal places
+        discounted.push(finalPrice)
+    }
 
-    if (add) {
+    console.log(discountedPrice);
 
-        const result = 0;
-
-        result = num1 + num2;
-
-        console.log('values added: ', result);
-
-    } else return;
-
-    console.log('final result: ', result);
+    return discounted;
 }
 
-sumValues(10, 10, true);
+discountPrices([100,200,300],0.5);

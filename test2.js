@@ -10,8 +10,4 @@ let student = {
     courseLoad: ['CSE 110', 'CSE 134', 'VIS 41'] // Array of strings
   };
 
-console.log(student.name);                // Accessing a string property
-console.log(student['Grad Year']);        // Accessing a property with a space
-console.log(student.greeting());          // Calling a method
-console.log(student['Favorite Teacher'].name); // Accessing a nested object property
-console.log(student.courseLoad[0]);       // Accessing an array element
+student.greeting()
